@@ -4,7 +4,7 @@ type ButtonProps = {
   type: 'button' | 'submit';
   title: string;
   icon?: string;
-  variant: 'btn_dark_green' | 'orange';
+  variant: string;
 };
 
 const Button = ({ type, title, icon, variant }: ButtonProps) => {
@@ -14,7 +14,7 @@ const Button = ({ type, title, icon, variant }: ButtonProps) => {
       type={type}
     >
       {icon && <Image src={icon} alt={title} width={24} height={24} />}
-      <label className="bold-16 whitespace-nowrap">{title}</label>
+      <p className="bold-16 whitespace-nowrap">{title}</p>
     </button>
   );
 };
