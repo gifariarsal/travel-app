@@ -1,11 +1,16 @@
 import Image from 'next/image';
-import React from 'react';
 
 const Guide = () => {
   return (
     <section className="flexCenter flex-col">
-      <div className="padding-container max-container w-full pb-24">
-        <Image src="/camp.svg" alt="camp" width={50} height={50} />
+      <div className="relative padding-container max-container w-full pb-24">
+        <Image
+          src="/camp.svg"
+          alt="camp"
+          width={50}
+          height={51}
+          className="absolute top-[-32px] w-10 lg:w-[50px]"
+        />
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
             Guide You to Easy Path

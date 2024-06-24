@@ -1,17 +1,16 @@
 import { FEATURES } from '@/constants';
 import Image from 'next/image';
-import React from 'react';
 
 const Features = () => {
   return (
     <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
       <div className="max-container padding-container relative w-full flex justify-end">
-        <div className="flex flex-1 lg:min-h-[900px]">
+        <div className="flex flex-1">
           <Image
             src="/phone.png"
             alt="phone"
-            width={440}
-            height={1000}
+            width={428}
+            height={815}
             className="feature-phone"
           />
         </div>
@@ -22,8 +21,8 @@ const Features = () => {
               src="/camp.svg"
               alt="camp"
               width={50}
-              height={50}
-              className="absolute left-[-5px] top-[-28px] w-10 lg:w-[50px]"
+              height={51}
+              className="absolute left-[-5px] top-[-32px] w-10 lg:w-[50px]"
             />
             <h2 className="bold-40 lg:bold-64">Our Features</h2>
           </div>
